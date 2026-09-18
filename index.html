@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ELITE X — plataforma premium para criadores e assinantes.">
+  <title>Elite X — Conteúdo Premium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+      <h2>Conteúdo +18</h2>
+      <p>Confirme que você tem idade legal para acessar este site.</p>
+<small>Este protótipo não contém conteúdo adulto real.</small>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav wrap">
+      <a class="logo" href="#inicio" aria-label="ELITE X">ELITE <b>X</b></a>
+      <div class="nav-links">
+        <a href="#destaques">Destaques</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#criadores">Criadores</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn ghost" id="loginBtn">Entrar</button>
+        <button class="btn primary" id="subscribeTop">Assinar</button>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+    </nav>
+    <div class="mobile-menu wrap" id="mobileMenu">
+      <a href="#destaques">Destaques</a>
+      <a href="#categorias">Categorias</a>
+      <a href="#criadores">Criadores</a>
+      <button class="btn ghost" id="loginMobile">Entrar</button>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="wrap hero-content">
+        <span class="eyebrow">PLATAFORMA PARA CRIADORES</span>
+        <h1>Prazer, <span>sem ruído.</span></h1>
+        <p>Descubra criadores, acompanhe conteúdo exclusivo e tenha uma experiência premium.</p>
+        <div class="hero-actions">
+          <a class="btn primary large" href="#destaques">Explorar catálogo</a>
+          <button class="btn secondary large" id="creatorBtn">Quero ser criador</button>
+        </div>
+        <div class="hero-stats">
+          <div><strong>+18</strong><small>Área para adultos</small></div>
+          <div><strong>100%</strong><small>Perfis verificados</small></div>
+          <div><strong>Premium</strong><small>Conteúdo exclusivo</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="destaques" class="section wrap">
+      <div class="section-title">
+        <div><span class="eyebrow">CATÁLOGO</span><h2>Em destaque</h2></div>
+        <button class="text-btn" id="showAll">Ver tudo →</button>
+      </div>
+      <div class="grid" id="catalog"></div>
+    </section>
+
+    <section id="criadores" class="section wrap">
+      <div class="section-title">
+        <div><span class="eyebrow">EXPLORAR</span><h2>Criadores</h2></div>
+      </div>
+      <div class="creator-grid" id="creators"></div>
+    </section>
+
+    <section id="categorias" class="section wrap">
+      <div class="section-title">
+        <div><span class="eyebrow">DESCUBRA</span><h2>Categorias</h2></div>
+      </div>
+      <div class="category-grid">
+        <button class="category-card" data-category="Fotos"><strong>Fotos</strong><span>Ensaios e coleções</span></button>
+        <button class="category-card" data-category="Vídeos"><strong>Vídeos</strong><span>Conteúdo exclusivo</span></button>
+        <button class="category-card" data-category="Assinaturas"><strong>Assinaturas</strong><span>Acesso recorrente</span></button>
+        <button class="category-card" data-category="Premium"><strong>Premium</strong><span>Experiências especiais</span></button>
+      </div>
+    </section>
+
+    <section class="creator-cta wrap">
+      <div>
+        <span class="eyebrow">PARA CRIADORES</span>
+        <h2>Transforme sua audiência em negócio.</h2>
+        <p>Perfil, assinaturas, vendas avulsas e painel de criador em uma única plataforma.</p>
+      </div>
+      <button class="btn primary large" id="creatorCta">Começar como criador</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div><a class="logo" href="#inicio">ELITE <b>X</b></a><p>Conteúdo premium para adultos.</p></div>
+      <div><strong>Plataforma</strong><a href="#criadores">Criadores</a><a href="#destaques">Conteúdo</a><a href="#">Assinaturas</a></div>
+      <div><strong>Legal</strong><a href="#">Privacidade</a><a href="#">Termos</a><a href="#">DMCA</a></div>
+      <div><strong>Suporte</strong><a href="#">Central de ajuda</a><a href="#">Contato</a></div>
+    </div>
+    <div class="wrap footer-bottom">© 2026 Elite X · Protótipo de interface</div>
+  </footer>
+
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-panel">
+      <button class="close" id="closeDrawer">×</button>
+      <span class="eyebrow">ELITE X</span>
+      <div id="drawerContent"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
